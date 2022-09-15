@@ -28,15 +28,12 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/lixianke1/XMultiTabModule-iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'XMultiTabModule-iOS/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'XMultiTabModule-iOS' => ['XMultiTabModule-iOS/Assets/*.png']
-  # }
+  s.resources="XMultiTabModule-iOS/Assets/*.xcassets"
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.dependency 'SDWebImage'
 end

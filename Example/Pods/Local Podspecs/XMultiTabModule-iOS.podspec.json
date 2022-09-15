@@ -1,0 +1,29 @@
+{
+  "name": "XMultiTabModule-iOS",
+  "version": "0.1.0",
+  "summary": "A short description of XMultiTabModule-iOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lixianke1/XMultiTabModule-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lixianke1": "lixianke1@jd.com"
+  },
+  "source": {
+    "git": "https://github.com/lixianke1/XMultiTabModule-iOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "XMultiTabModule-iOS/Classes/**/*",
+  "resources": "XMultiTabModule-iOS/Assets/*.xcassets",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "dependencies": {
+    "SDWebImage": [
+
+    ]
+  }
+}

@@ -4,6 +4,7 @@ platform :ios, '10.0'
 
 target 'XMultiTabModule-iOS_Example' do
   pod 'XMultiTabModule-iOS', :path => '../'
+  pod 'MJExtension'
 
   target 'XMultiTabModule-iOS_Tests' do
     inherit! :search_paths

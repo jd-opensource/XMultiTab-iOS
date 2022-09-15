@@ -1,0 +1,6 @@
+framework module XMultiTabModule_iOS {
+  umbrella header "XMultiTabModule-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

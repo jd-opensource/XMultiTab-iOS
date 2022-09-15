@@ -5,11 +5,17 @@
 [![License](https://img.shields.io/cocoapods/l/XMultiTabModule-iOS.svg?style=flat)](https://cocoapods.org/pods/XMultiTabModule-iOS)
 [![Platform](https://img.shields.io/cocoapods/p/XMultiTabModule-iOS.svg?style=flat)](https://cocoapods.org/pods/XMultiTabModule-iOS)
 
+XMultiTabModule-iOS是支持底部异型Tab的底部导航控制器。
+
+通过实现SSSMultiTabDelagate中的两个代理方法，可以实现Native和Web页面的自定义加载。
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+iOS 9.0
 
 ## Installation
 

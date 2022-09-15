@@ -1,0 +1,35 @@
+{
+    "code": "0",
+    "tabList": [
+        {
+            "specialType": 0,
+            "tabType": 1,
+            "tabName": "秒杀",
+            "tabImage": "https://m.360buyimg.com/seckillcms/jfs/t1/48165/32/10279/8628/5d771d3fEc45fc5d7/1607c833d8ea730c.png.webp",
+            "selectTabImage": "https://m.360buyimg.com/seckillcms/jfs/t1/82108/15/9751/11238/5d771d59E3468fc43/f8d4b0e049316eab.png.webp",
+            "module": "openappurl:native",
+            "params": "{\"title\":\"秒杀\"}"
+        },
+        {
+            "specialType": 0,
+            "tabType": 1,
+            "tabName": "即将售罄",
+            "tabImage": "https://m.360buyimg.com/seckillcms/jfs/t1/44814/1/10333/7917/5d771df7Ed08aaa5a/dde189c14ba051cf.png.webp",
+            "selectTabImage": "https://m.360buyimg.com/seckillcms/jfs/t1/62956/36/9692/9892/5d771dd5Ee92f90a5/7f43f36f96fed72f.png.webp",
+            "module": "openappurl:native",
+            "params": "{\"title\":\"即将售罄\"}"
+        },
+        {
+            "specialType": 0,
+            "tabType": 0,
+            "tabName": "试用",
+            "tabImage": "https://m.360buyimg.com/seckillcms/jfs/t1/133331/39/9421/20968/5f56f473Ea56eec27/6c42204e2b0c55f5.png.webp",
+            "selectTabImage": "https://m.360buyimg.com/seckillcms/jfs/t1/149846/17/7849/26015/5f56f46eE7b299731/c21c1588100f5fc7.png.webp",
+            "link": "https://prodev.m.jd.com/mall/active/G7sQ92vWSBsTHzk4e953qUGWQJ4/index.html"
+        }
+    ],
+    "tabConfig": {
+        "selectIndex": 0,
+        "tabBackground": "#F2F2F2"
+    }
+}

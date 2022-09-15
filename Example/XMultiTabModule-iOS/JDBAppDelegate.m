@@ -2,16 +2,28 @@
 //  JDBAppDelegate.m
 //  XMultiTabModule-iOS
 //
-//  Created by lixianke1 on 08/31/2022.
+//  Created by lixianke1 on 08/23/2022.
 //  Copyright (c) 2022 lixianke1. All rights reserved.
 //
 
 #import "JDBAppDelegate.h"
+#import "JDBTabLoader.h"
+@import XMultiTabModule_iOS;
+#import <MJExtension/MJExtension.h>
 
 @implementation JDBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSDictionary *localData = [self fetchLocalData];
+    SSSBaseTabWrapperModel *model = [SSSBaseTabWrapperModel mj_objectWithKeyValues:localData];
+    SSSMultiTabController* tabVC = [[SSSMultiTabController alloc] init];
+    tabVC.delegate = [JDBTabLoader sharedLoader];
+    dispatch_after(DISPATCH_TIME_NOW + 0.1, dispatch_get_main_queue(), ^{
+        [tabVC refreshWithTabModel:model];
+    });
+    [[UIApplication sharedApplication].windows firstObject].rootViewController = tabVC;
+    [[[UIApplication sharedApplication].windows firstObject] makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }
@@ -41,6 +53,41 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+- (NSDictionary *)fetchLocalData {
+    NSDictionary *res = nil;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"tabs" ofType:@"json"];
+    if ([self isFileExsit:filePath]) {
+        @try {
+            NSData *binData = [NSData dataWithContentsOfFile:filePath];
+            if (binData) {
+                NSError *readError = nil;
+                res = [NSJSONSerialization JSONObjectWithData:binData
+                                                          options:NSJSONReadingMutableLeaves|NSJSONReadingMutableContainers
+                                                            error:&readError];
+                if (!readError && res) {
+                    if (!validateDictionary(res)) {
+                        res = nil;
+                    }
+                }
+            }
+        } @catch (NSException *exception) {
+            
+        } @finally {
+            
+        }
+
+    }
+    return res;
+}
+
+- (BOOL)isFileExsit:(NSString *)path {
+    if (!validateString(path)) {
+        return NO;
+    }
+    return [[NSFileManager defaultManager] fileExistsAtPath:path];
 }
 
 @end

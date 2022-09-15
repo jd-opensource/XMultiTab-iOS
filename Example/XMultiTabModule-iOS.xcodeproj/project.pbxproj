@@ -24,6 +24,13 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		BF4C00337F8B2B126C49BEB5 /* Pods_XMultiTabModule_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473294F7741D841BDA7F4CC6 /* Pods_XMultiTabModule_iOS_Tests.framework */; };
 		C18D80581F47F9A574B3EBC7 /* Pods_XMultiTabModule_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F07A52568F0BED2CB027A4E /* Pods_XMultiTabModule_iOS_Example.framework */; };
+		F1140AFA28BF719600637D6D /* XMultiTabModule-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1140AEE28BF719600637D6D /* XMultiTabModule-iOS-Info.plist */; };
+		F1140AFB28BF719600637D6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1140AEF28BF719600637D6D /* main.m */; };
+		F1140AFC28BF719600637D6D /* JDBTabLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F1140AF128BF719600637D6D /* JDBTabLoader.m */; };
+		F1140AFD28BF719600637D6D /* tabs.json in Resources */ = {isa = PBXBuildFile; fileRef = F1140AF228BF719600637D6D /* tabs.json */; };
+		F1140AFE28BF719600637D6D /* JDBMultiTabModule-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1140AF328BF719600637D6D /* JDBMultiTabModule-Info.plist */; };
+		F1140AFF28BF719600637D6D /* JDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1140AF628BF719600637D6D /* JDBViewController.m */; };
+		F1140B0028BF719600637D6D /* JDBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1140AF728BF719600637D6D /* JDBAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +45,11 @@
 
 /* Begin PBXFileReference section */
 		07FD7ED097466EE36C63D738 /* Pods-XMultiTabModule-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMultiTabModule-iOS_Tests.release.xcconfig"; path = "Target Support Files/Pods-XMultiTabModule-iOS_Tests/Pods-XMultiTabModule-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		200A146036E09010457A8917 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		2944FB0A60029042F201FF78 /* XMultiTabModule-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "XMultiTabModule-iOS.podspec"; path = "../XMultiTabModule-iOS.podspec"; sourceTree = "<group>"; };
+		200A146036E09010457A8917 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2944FB0A60029042F201FF78 /* XMultiTabModule-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "XMultiTabModule-iOS.podspec"; path = "../XMultiTabModule-iOS.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4125D65494127A4AAD2149C6 /* Pods-XMultiTabModule-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMultiTabModule-iOS_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XMultiTabModule-iOS_Tests/Pods-XMultiTabModule-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		473294F7741D841BDA7F4CC6 /* Pods_XMultiTabModule_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMultiTabModule_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C7A1309C2244535263B258A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4C7A1309C2244535263B258A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4F07A52568F0BED2CB027A4E /* Pods_XMultiTabModule_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMultiTabModule_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		532638842EF3AFCA3DEF8F0A /* Pods-XMultiTabModule-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMultiTabModule-iOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-XMultiTabModule-iOS_Example/Pods-XMultiTabModule-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XMultiTabModule-iOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XMultiTabModule-iOS_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +74,18 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9C8A3CDDAD7D7D343688B3A /* Pods-XMultiTabModule-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMultiTabModule-iOS_Example.release.xcconfig"; path = "Target Support Files/Pods-XMultiTabModule-iOS_Example/Pods-XMultiTabModule-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F1140AEE28BF719600637D6D /* XMultiTabModule-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XMultiTabModule-iOS-Info.plist"; sourceTree = "<group>"; };
+		F1140AEF28BF719600637D6D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1140AF028BF719600637D6D /* JDBTabLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBTabLoader.h; sourceTree = "<group>"; };
+		F1140AF128BF719600637D6D /* JDBTabLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBTabLoader.m; sourceTree = "<group>"; };
+		F1140AF228BF719600637D6D /* tabs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tabs.json; sourceTree = "<group>"; };
+		F1140AF328BF719600637D6D /* JDBMultiTabModule-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JDBMultiTabModule-Info.plist"; sourceTree = "<group>"; };
+		F1140AF428BF719600637D6D /* XMultiTabModule-iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XMultiTabModule-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		F1140AF528BF719600637D6D /* JDBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBAppDelegate.h; sourceTree = "<group>"; };
+		F1140AF628BF719600637D6D /* JDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBViewController.m; sourceTree = "<group>"; };
+		F1140AF728BF719600637D6D /* JDBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBAppDelegate.m; sourceTree = "<group>"; };
+		F1140AF828BF719600637D6D /* JDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBViewController.h; sourceTree = "<group>"; };
+		F1140AF928BF719600637D6D /* JDBMultiTabModule-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JDBMultiTabModule-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +122,6 @@
 				4125D65494127A4AAD2149C6 /* Pods-XMultiTabModule-iOS_Tests.debug.xcconfig */,
 				07FD7ED097466EE36C63D738 /* Pods-XMultiTabModule-iOS_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -146,6 +164,18 @@
 			children = (
 				6003F59C195388D20070C39A /* JDBAppDelegate.h */,
 				6003F59D195388D20070C39A /* JDBAppDelegate.m */,
+				F1140AF528BF719600637D6D /* JDBAppDelegate.h */,
+				F1140AF728BF719600637D6D /* JDBAppDelegate.m */,
+				F1140AF328BF719600637D6D /* JDBMultiTabModule-Info.plist */,
+				F1140AF928BF719600637D6D /* JDBMultiTabModule-Prefix.pch */,
+				F1140AF028BF719600637D6D /* JDBTabLoader.h */,
+				F1140AF128BF719600637D6D /* JDBTabLoader.m */,
+				F1140AF828BF719600637D6D /* JDBViewController.h */,
+				F1140AF628BF719600637D6D /* JDBViewController.m */,
+				F1140AEF28BF719600637D6D /* main.m */,
+				F1140AF228BF719600637D6D /* tabs.json */,
+				F1140AEE28BF719600637D6D /* XMultiTabModule-iOS-Info.plist */,
+				F1140AF428BF719600637D6D /* XMultiTabModule-iOS-Prefix.pch */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* JDBViewController.h */,
 				6003F5A6195388D20070C39A /* JDBViewController.m */,
@@ -258,6 +288,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -279,8 +310,11 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				F1140AFE28BF719600637D6D /* JDBMultiTabModule-Info.plist in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				F1140AFA28BF719600637D6D /* XMultiTabModule-iOS-Info.plist in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				F1140AFD28BF719600637D6D /* tabs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,10 +336,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-XMultiTabModule-iOS_Example/Pods-XMultiTabModule-iOS_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/XMultiTabModule-iOS/XMultiTabModule_iOS.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMultiTabModule_iOS.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +404,11 @@
 			files = (
 				6003F59E195388D20070C39A /* JDBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* JDBViewController.m in Sources */,
+				F1140AFB28BF719600637D6D /* main.m in Sources */,
+				F1140AFF28BF719600637D6D /* JDBViewController.m in Sources */,
+				F1140B0028BF719600637D6D /* JDBAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				F1140AFC28BF719600637D6D /* JDBTabLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,7 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

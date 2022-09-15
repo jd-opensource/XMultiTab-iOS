@@ -1,0 +1,29 @@
+PODS:
+  - MJExtension (3.4.1)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+  - XMultiTabModule-iOS (0.1.0):
+    - SDWebImage
+
+DEPENDENCIES:
+  - MJExtension
+  - XMultiTabModule-iOS (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - MJExtension
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  XMultiTabModule-iOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+  XMultiTabModule-iOS: 4199cb26b13c23393d4f80a4a2523d0140a360ea
+
+PODFILE CHECKSUM: c35da12977f8aca0c076af81b308b7306a0b45e2
+
+COCOAPODS: 1.8.3
