@@ -7,6 +7,7 @@
 //
 
 #import "JDBViewController.h"
+#import <XMultiTabModule_iOS/UIColor+SSS.h>
 
 @interface JDBViewController ()
 
@@ -28,6 +29,7 @@
 {
     [super viewDidLoad];
     [self.view addSubview:self.titleLabel];
+    self.view.backgroundColor = [UIColor colorWithHex:@"#F2F2F2"];
     [self.titleLabel sizeToFit];
     self.titleLabel.center = self.view.center;
 	// Do any additional setup after loading the view, typically from a nib.

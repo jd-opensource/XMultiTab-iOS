@@ -20,16 +20,34 @@
             "params": "{\"title\":\"即将售罄\"}"
         },
         {
+            "specialType": 1,
+            "tabType": 1,
+            "tabName": "异型",
+            "tabImage": "https://m.360buyimg.com/seckillcms/jfs/t1/201428/18/16148/973396/626679faEe10cbb96/76b3f43dce6b16b9.png!q70.jpg.webp",
+            "selectTabImage": "https://m.360buyimg.com/seckillcms/jfs/t1/201444/23/9151/459069/61542b51Ea8eb99d3/6f8ef23bedefbc8a.jpg!q70.jpg.webp",
+            "module": "openappurl:native",
+            "params": "{\"title\":\"异型\"}"
+        },
+        {
             "specialType": 0,
             "tabType": 0,
             "tabName": "试用",
             "tabImage": "https://m.360buyimg.com/seckillcms/jfs/t1/133331/39/9421/20968/5f56f473Ea56eec27/6c42204e2b0c55f5.png.webp",
             "selectTabImage": "https://m.360buyimg.com/seckillcms/jfs/t1/149846/17/7849/26015/5f56f46eE7b299731/c21c1588100f5fc7.png.webp",
             "link": "https://prodev.m.jd.com/mall/active/G7sQ92vWSBsTHzk4e953qUGWQJ4/index.html"
+        },
+        {
+            "specialType": 0,
+            "tabType": 1,
+            "tabName": "品类秒杀",
+            "tabImage": "https://m.360buyimg.com/seckillcms/jfs/t1/209124/8/14576/8527/61cef392E721d5c8d/a14d75499c085949.png!q70.jpg.webp",
+            "selectTabImage": "https://m.360buyimg.com/seckillcms/jfs/t1/218045/39/9722/8643/61cef38fEc4dbaffe/2713c583a730d4be.png!q70.jpg.webp",
+            "module": "openappurl:native",
+            "params": "{\"title\":\"品类秒杀\"}"
         }
     ],
     "tabConfig": {
-        "selectIndex": 0,
-        "tabBackground": "#F2F2F2"
+        "selectIndex": 1,
+        "tabBackground": "#FFFFFF"
     }
 }
